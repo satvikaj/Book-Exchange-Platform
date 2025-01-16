@@ -1,0 +1,93 @@
+.login-container {
+  min-height: 100vh;
+  background-image: url('./login.jpg'); /* Use the local image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  background-color: #f7f9fc;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Login card styling */
+.login-card {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  width: 80%;
+  max-width: 800px;
+}
+
+.image-container {
+  flex: 1;
+  display: none; /* Hide image on smaller screens by default */
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.login-form {
+  background: #ffffff;
+  padding: 30px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 400px;
+  text-align: center;
+}
+
+/* Form styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+ 
+}
+
+input {
+  width: 30%; /* Reduced width */
+  padding: 7px; /* Reduced padding */
+  font-size: 0.9rem; /* Slightly smaller font size */
+  border: none;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+
+.btn {
+  width: 30%; /* Match button width to input size */
+  padding: 10px 20px;
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #21a1f1;
+  transform: scale(1.05);
+}
+
+.message {
+  margin-top: 15px;
+  color: #ff4d4d;
+  font-size: 0.9rem;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+  .image-container {
+    display: block;
+  }
+}
+ 

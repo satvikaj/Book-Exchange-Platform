@@ -1,0 +1,61 @@
+.home-container {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.content {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
+  padding: 20px 40px; /* Added padding to make the text more spacious */
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  width: auto; /* Auto width to fit text content */
+  max-width: 80%; /* Limit width to a percentage of the screen width */
+  text-align: center; /* Keep the text centered */
+}
+
+h1 {
+  font-size: 2rem; /* Smaller font size for the heading */
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #f5f5f5;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Subtle shadow for readability */
+  white-space: nowrap; /* Prevents the text from wrapping to the next line */
+}
+
+p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.btn {
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #61dafb;
+  color: #282c34;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin: 10px;
+}
+
+.btn:hover {
+  background-color: #21a1f1;
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.btn:focus {
+  outline: none;
+}
