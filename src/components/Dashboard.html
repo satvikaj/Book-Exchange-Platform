@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <div class="header">
+      <h1>"A room without books is like a body without a soul."</h1>
+    </div>
+
+    <!-- Location Section -->
+    <div class="location">
+      <p>Your Location: <span id="location">Fetching location...</span></p>
+    </div>
+
+    <div class="content">
+      <!-- Sidebar Menu -->
+      <div class="sidebar">
+        <ul>
+          <li><a href="#">Option 1</a></li>
+          <li><a href="#">Option 2</a></li>
+          <li><a href="#">Option 3</a></li>
+        </ul>
+      </div>
+
+      <!-- Background Image Section -->
+      <div class="background-image"></div>
+    </div>
+  </div>
+
+  <script>
+    // Geolocation API to fetch the user's location
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const { latitude, longitude } = position.coords;
+          document.getElementById("location").textContent = `Lat: ${latitude}, Long: ${longitude}`;
+        },
+        (error) => {
+          document.getElementById("location").textContent = "Unable to fetch location.";
+        }
+      );
+    } else {
+      document.getElementById("location").textContent = "Geolocation not supported.";
+    }
+  </script>
+</body>
+</html>

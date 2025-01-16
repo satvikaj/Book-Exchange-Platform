@@ -1,0 +1,142 @@
+/* Exchange Page Container */
+.exchange-page {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #f0f2f5;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .exchange-header {
+    background-color: #db105a;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .form-box, .exchange-list-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  
+  .form-box h2, .exchange-list-box h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .form-box form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-box label {
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .form-box input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .form-box input[type="file"] {
+    padding: 5px;
+  }
+  
+  .form-box button {
+    background-color: #61dafb;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .form-box button:hover {
+    background-color: #21a1f1;
+    transform: scale(1.05);
+  }
+  
+  .form-box .success, .exchange-list-box .success {
+    color: green;
+    margin-top: 10px;
+  }
+  
+  .form-box .error, .exchange-list-box .error {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  /* Suggestions List Styling */
+  .suggestions-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-height: 150px;
+    overflow-y: auto;
+  }
+  
+  .suggestions-list li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .suggestions-list li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .suggestions-list li:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Exchange List Box Styling */
+  .exchange-list-box ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .exchange-list-box li {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .exchange-list-box li:last-child {
+    border-bottom: none;
+  }
+  
+  .exchange-list-box .exchange-button {
+    background-color: #61dafb;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .exchange-list-box .exchange-button:hover {
+    background-color: #21a1f1;
+    transform: scale(1.05);
+  }
+  

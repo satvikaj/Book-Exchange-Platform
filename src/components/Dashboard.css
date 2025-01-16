@@ -1,0 +1,208 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f2f5;
+  overflow-x: hidden;
+}
+
+/* Main Container */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Header Section */
+.dashboard-header {
+  background-color: #00bb06;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.quote {
+  margin: 0;
+  font-family: "Georgia", serif;
+  font-style: italic;
+}
+
+/* Location Section */
+.dashboard-location {
+  border: 10px solid #ccc;
+  background-color: #ffffff;
+  padding: 20px 20px;
+  font-size: 18px;
+  color: #555555;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.location-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Profile Icon */
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.profile-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Content */
+.dashboard-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden; /* Prevents content from overflowing */
+}
+
+/* Sidebar Section */
+.dashboard-sidebar {
+  background-color: #000000;
+  color: white;
+  width: 20%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-right: 5px solid #27ae60;
+  box-sizing: border-box;
+}
+
+.dashboard-sidebar ul {
+  list-style: none;
+  width: 100%;
+}
+
+.dashboard-sidebar li {
+  margin: 15px 0;
+}
+
+.dashboard-sidebar button {
+  background-color: white;
+  color: #2ecc71;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 80%;
+}
+
+.dashboard-sidebar button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #27ae60;
+  color: white;
+}
+
+/* Main Content Section */
+.dashboard-main-content {
+  flex: 1;
+  padding: 20px;
+  background-image: url('./lo.jpg');
+  background-size: cover; /* Ensures the image covers the container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  overflow-y: auto; /* Allows scrolling if content overflows */
+  box-sizing: border-box;
+}
+
+/* Background Image Section */
+.dashboard-background {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Profile Styling */
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f2f5;
+  width: calc(100% - 20%); /* Make the profile take the remaining width */
+  margin-left: 20%; /* Push profile section to the right of the sidebar */
+  box-sizing: border-box;
+  overflow-y: auto; /* Allow scrolling for profile content */
+}
+
+.profile-header {
+  background-color: #34db50;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.profile-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px; /* Constrain maximum width for better readability */
+  text-align: left;
+  margin-top: 20px;
+}
+
+.profile-content h2 {
+  color: #2ecc71;
+}
+
+.profile-content p {
+  font-size: 16px;
+  color: #555555;
+}
+
+.user-books {
+  margin-top: 20px;
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%; /* Ensure grid fits within the profile container */
+  box-sizing: border-box;
+}
+
+.book-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-item h4 {
+  margin-top: 0;
+  color: #3498db;
+}
+
+.book-item p {
+  margin: 5px 0;
+  color: #555555;
+}

@@ -1,0 +1,130 @@
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f2f5;
+    width: 100%; /* Allow profile to take up the full space without overflowing */
+    max-width: calc(100% - 20%); /* Constrain max width to prevent overflow */
+    margin-left: 20%;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Ensure padding is included in width calculations */
+}
+
+.profile-header {
+    background-color: #db105a;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.profile-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px; /* Constrain max width */
+    text-align: left;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.profile-content h2 {
+    color: #2ecc71;
+}
+
+.profile-content p {
+    font-size: 16px;
+    color: #555555;
+}
+
+.user-books {
+    margin-top: 20px;
+}
+
+.books-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.book-item {
+    display: flex;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.book-image {
+    max-width: 150px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.book-details {
+    flex: 1;
+}
+
+.book-item h4 {
+    margin-top: 0;
+    text-align: center;
+    color: #db105a;
+}
+
+.book-item p {
+    margin: 5px 0;
+    color: #555555;
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px;
+    background-color: #db105a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #c3094a; /* Darker shade of the button color on hover */
+    transform: translateY(-2px); /* Small lift effect */
+}
+
+button:disabled {
+    background-color: #bfbfbf; /* Grey background for disabled state */
+    cursor: not-allowed;
+}
+
+/* Styles for the edit form buttons */
+.edit-actions {
+    display: flex;
+    gap: 10px; /* Maintain gap between Save and Cancel buttons */
+    margin-top: 20px; /* Add some space above the buttons */
+}
+
+.edit-actions button {
+    flex: 1; /* Buttons will take equal width */
+    padding: 12px 20px;
+    font-size: 16px;
+}
+
+.success {
+    color: #2ecc71;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.error {
+    color: #e74c3c;
+    font-size: 16px;
+    margin-top: 20px;
+}
